@@ -1,0 +1,40 @@
+body{
+   background-image: url('../images/bg-default.jpg');
+   
+   background-attachment: fixed;
+}
+
+.container{
+   display: flex;
+   flex-direction: row;
+   flex-flow: row wrap;
+}
+
+.item{
+   display: flex;
+   flex-flow: row wrap;
+   width: 300px;
+   background-size: 300px;
+}
+
+.head{
+   width: 75px;
+   background-color: bisque;
+}
+.screen{
+   width:100%;
+   height: 150px;
+   background-image: url('../images/404_preview-320x180.jpg');
+   background-color: aqua;
+   
+}
+.description{
+   display: flex;
+   width: 225px;
+   flex-flow: column nowrap;
+   background-color: green;
+   align-items: stretch;
+}
+.channel{
+   background-color: cadetblue;
+}
