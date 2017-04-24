@@ -1,13 +1,21 @@
 body{
    background-image: url('../images/bg-default.jpg');
-   
    background-attachment: fixed;
 }
+.dark_50{
+   background-color: RGBA(0,0,0,0.5);
+   /* opacity: 0.5;   它會寞名的影響到子元素，不知為何 */
+   height:100vh;
+   display: flex;
+   justify-content: center;
 
+}
 .container{
    display: flex;
    flex-direction: row;
    flex-flow: row wrap;
+   justify-content: center;
+   max-width: 1250px;
 }
 
 .item{
@@ -15,26 +23,51 @@ body{
    flex-flow: row wrap;
    width: 300px;
    background-size: 300px;
+   margin:25px;
 }
 
-.head{
-   width: 75px;
-   background-color: bisque;
-}
 .screen{
    width:100%;
    height: 150px;
-   background-image: url('../images/404_preview-320x180.jpg');
+   background-image: url('../images/screen.jpg');
    background-color: aqua;
    
 }
+.item_down{
+   display: flex;
+   background-color: black;
+   opacity: 0.5;
+}
+.head{
+   width: 75px;
+   height: 75px;
+   background-image: url('../images/pic.png');
+   background-size: contain;
+   border-radius: 50%;
+   margin: 10px;
+}
+
 .description{
    display: flex;
-   width: 225px;
+   width: 205px;
    flex-flow: column nowrap;
-   background-color: green;
+   flex-wrap: nowrap;
+   /*background-color: green;*/
    align-items: stretch;
+   justify-content:space-around;
 }
+
 .channel{
-   background-color: cadetblue;
+   /*background-color: cadetblue;*/
+   font-size: 25px;
+   color: white;
+   font-weight: bolder;
+}
+
+.name{
+   /*background-color: darkgray;*/
+   font-size: 25px;
+   color: white;
+   font-weight: bolder;
+
 }
