@@ -1,0 +1,45 @@
+body{
+   background: url('../images/bg-default.jpg') no-repeat center;
+   background-attachment: fixed;
+   margin: 0;
+}
+
+.container{
+   background-color: rgba(0,0,0,0.5);
+   min-height: 100vh;
+   padding-top: 30px;
+}
+.row{
+   width: 1000px;
+   margin: 0 auto;
+}
+.intro{
+   color:white;
+   position: absolute;
+   top:10px;
+   left:70px;
+}
+
+.bottom{
+   padding: 10px;
+   background-color: rgba(0,0,0,0.6);
+   position: relative; /* why ?? */
+}
+.avatar{
+   width: 50px;
+   height: 50px;
+   overflow: hidden;/* why ?? */
+   border-radius: 50%;
+}
+
+.avatar img{
+   width: 100%;
+}
+.col{
+   width: 300px;
+   display: inline-block; /* why ?? */
+}
+
+.preview img{
+   width:100%;
+}
