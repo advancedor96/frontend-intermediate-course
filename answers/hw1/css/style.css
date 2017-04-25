@@ -7,13 +7,15 @@ body{
 }
 .dark_50{
    background-color: RGBA(0,0,0,0.5);
+   background-attachment: fixed;
    /* opacity: 0.5;   它會寞名的影響到子元素，不知為何 */
-   height:100vh;
+   /*height:100vh;*/
    display: flex;
    justify-content: center;
 
 }
 .container{
+   padding-top: 22px;
    display: flex;
    flex-direction: row;
    flex-flow: row wrap;

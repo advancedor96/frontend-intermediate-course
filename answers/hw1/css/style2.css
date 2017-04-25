@@ -39,6 +39,9 @@ body{
    width: 300px;
    display: inline-block; /* why ?? */
 }
+.col:nth-child(3n){ /* 3n表示 3的倍數 ex:3, 6, 9... */
+   margin-right: 0px; /* why ?? */
+}
 
 .preview img{
    width:100%;
