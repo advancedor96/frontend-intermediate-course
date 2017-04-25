@@ -1,0 +1,85 @@
+body{
+   background: url('../images/bg-default.jpg') no-repeat center;
+   /*background-image: url('../images/bg-default.jpg');*/
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.dark_50{
+   background-color: RGBA(0, 0, 0, 0.5);
+   background-attachment: fixed;
+   /* opacity: 0.5;   它會寞名的影響到子元素，不知為何 */
+   /*height:100vh;*/
+   display: flex;
+   justify-content: center;
+
+}
+.container{
+   padding-top: 22px;
+   display: flex;
+   flex-direction: row;
+   flex-flow: row wrap;
+   justify-content: center;
+   max-width: 1250px;
+}
+.item:hover{
+   -webkit-filter: brightness(1.3);
+   cursor: pointer;
+   box-shadow:4px 4px 12px 2px #888888;
+}
+.item{
+   display: flex;
+   flex-flow: row wrap;
+   width: 300px;
+   background-size: 300px;
+   margin:25px;
+   -webkit-transition : -webkit-filter 400ms linear, box-shadow 400ms;
+}
+
+.screen{
+   width:100%;
+   height: 150px;
+   background-image: url('../images/screen.jpg');
+   background-color: aqua;
+   
+}
+.item_down{
+   display: flex;
+   background-color: RGBA(0, 0, 0, 0.5);
+}
+.head{
+   width: 75px;
+   height: 75px;
+   background-image: url('../images/pic.png');
+   background-size: contain;
+   border-radius: 50%;
+   margin: 10px;
+}
+
+.description{
+   display: flex;
+   width: 205px;
+   flex-flow: column nowrap;
+   flex-wrap: nowrap;
+   align-items: stretch;
+   justify-content:space-around;
+   font-family: "Microsoft JhengHei", cursive;
+   padding: 5px 0;
+}
+
+.channel{
+   font-size: 25px;
+   color: white;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+.name{
+   font-size: 25px;
+   color: white;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+
+}
