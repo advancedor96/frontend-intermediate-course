@@ -1,0 +1,38 @@
+body {
+  background: black url("../images/background.jpg") no-repeat fixed; }
+
+.black_background {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; }
+
+#container {
+  max-width: 1000px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center; }
+
+.item {
+  width: 300px;
+  margin: 10px; }
+  .item img {
+    width: 100%; }
+
+.bottom {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.owner {
+  width: 20%;
+  margin: 10px 20px 10px 10px; }
+  .owner img {
+    border-radius: 50%; }
+
+.description {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
