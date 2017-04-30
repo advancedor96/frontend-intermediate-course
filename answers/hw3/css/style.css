@@ -19,6 +19,11 @@ body {
   .item img {
     width: 100%; }
 
+.item:hover {
+  filter: brightness(1.3);
+  cursor: pointer;
+  box-shadow: 4px 4px 12px 2px #888888; }
+
 .bottom {
   display: flex;
   background-color: rgba(0, 0, 0, 0.3); }
