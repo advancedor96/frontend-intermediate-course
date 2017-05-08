@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <title>作業4</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script>
+$(function () {
+   console.log("ready!");
+
+   $.ajax({
+   url: "https://api.twitch.tv/kraken/streams/?client_id=taqgkzs6he7fw6opbsb1dqjvdz9gyu&game=League%20of%20Legends&limit=20",
+   success: function(msg){
+      console.log('ok, msg:', msg);
+   },
+   error: function(xhr, ajaxOptions, thrownError){ 
+      alert(xhr.status); 
+      alert(thrownError); 
+   }
+   }).done(function() {
+      console.log('最後執行完成函數')
+   });
+
+});
+
+   </script>
+</head>
+
+<body>
+   <div class="black_background">
+      <div id="container">
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱1</div>
+                  <div class="name">實況主名稱1</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱2</div>
+                  <div class="name">實況主名稱2</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱3</div>
+                  <div class="name">實況主名稱3</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱4</div>
+                  <div class="name">實況主名稱4</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱5</div>
+                  <div class="name">實況主名稱5</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱6</div>
+                  <div class="name">實況主名稱6</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱7</div>
+                  <div class="name">實況主名稱7</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱8</div>
+                  <div class="name">實況主名稱8</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱9</div>
+                  <div class="name">實況主名稱9</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+
+         <div class="item">
+            <div class="preview"><img src="images/preview.jpg" alt=""></div>
+            <div class="bottom">
+               <div class="owner"><img src="images/owner.png" alt=""></div>
+               <div class="description">
+                  <div class="channel">頻道名稱10</div>
+                  <div class="name">實況主名稱10</div>
+               </div>
+            </div>
+         </div>
+         <!--class=item-->
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+
+      </div>
+      <!--container-->
+   </div>
+</body>
+
+</html>
