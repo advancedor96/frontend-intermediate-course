@@ -10,11 +10,12 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script>
 $(function () {
-   // console.log("ready!");
 
    $.ajax({
    url: "https://api.twitch.tv/kraken/streams/?client_id=taqgkzs6he7fw6opbsb1dqjvdz9gyu&game=League%20of%20Legends&limit=20",
    success: function(data){
+      $('#load').remove();
+
       console.log('ok, msg:', data);
       for(let i=0;i<data.streams.length; i++){
          let preview_img = data.streams[i].preview.medium;
@@ -51,6 +52,7 @@ $(function () {
       $("#container").append(`<div class="item"></div>`);
    },
    error: function(xhr, ajaxOptions, thrownError){ 
+      $('#load').remove();
       alert(xhr.status); 
       alert(thrownError); 
    }
@@ -66,7 +68,7 @@ $(function () {
 <body>
    <div class="black_background">
       <div id="container">
-
+         <div id="load"><img src="images/animal.gif" alt=""></div>
 
       </div>
       <!--container-->

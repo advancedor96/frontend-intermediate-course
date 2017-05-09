@@ -24,6 +24,10 @@ body{
    justify-content: center;
 }
 
+#load{
+   display: flex;
+   align-items: center;
+}
 @mixin filter_brightness($scale){
    filter: brightness($scale);
    -webkit-filter: brightness($scale);
