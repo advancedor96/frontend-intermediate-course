@@ -65,8 +65,8 @@ body {
     cursor: pointer;
     box-shadow: 4px 4px 15px  black; }
   .item:hover .preview {
-    filter: brightness(1.3);
-    -webkit-filter: brightness(1.3); }
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5); }
 
 .preview {
   transition: -webkit-filter 0.5s; }

@@ -8,61 +8,7 @@
    <link rel="stylesheet" href="css/style.css">
    <title>作業4</title>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script>
-$(function () {
-
-   $.ajax({
-   url: "https://api.twitch.tv/kraken/streams/?client_id=taqgkzs6he7fw6opbsb1dqjvdz9gyu&game=League%20of%20Legends&limit=20",
-   success: function(data){
-      $('#load').remove();
-
-      console.log('ok, msg:', data);
-      for(let i=0;i<data.streams.length; i++){
-         let preview_img = data.streams[i].preview.medium;
-         console.assert(preview_img, 'preview_img為空')
-         let channel_logo = data.streams[i].channel.logo;
-         console.assert(channel_logo, 'channel_logo為空')
-         let channel_status = data.streams[i].channel.status;
-         console.assert(channel_status, 'channel_status為空')
-         let channel_name = data.streams[i].channel.name;
-         console.assert(channel_name, 'channel_name為空')
-
-         // console.log('[' + i + ']');
-         // console.log('preview_img:', preview_img);
-         // console.log('channel_logo:', channel_logo);
-         // console.log('channel_status:', channel_status);
-         // console.log('channel_name:', channel_name);
-
-
-         $("#container").append(`<div class="item">
-            <div class="preview"><img src="${preview_img}" alt=""></div>
-            <div class="bottom">
-               <div class="owner"><img src="${channel_logo}" alt=""></div>
-               <div class="description">
-                  <div class="channel">${channel_status}</div>
-                  <div class="name">${channel_name}</div>
-               </div>
-            </div>
-         </div>
-         `);
-      }
-      
-      $("#container").append(`<div class="item"></div>`);
-      $("#container").append(`<div class="item"></div>`);
-      $("#container").append(`<div class="item"></div>`);
-   },
-   error: function(xhr, ajaxOptions, thrownError){ 
-      $('#load').remove();
-      alert(xhr.status); 
-      alert(thrownError); 
-   }
-   }).done(function() {
-      // console.log('最後執行完成函數')
-   });
-
-});
-
-   </script>
+   <script src="js/all.js"></script>
 </head>
 
 <body>
