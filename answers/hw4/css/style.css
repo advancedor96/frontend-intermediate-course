@@ -85,6 +85,21 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  color: white; }
+  color: white; 
+}
+.channel{
+  /*讓文字超出範圍顯示 ....*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+}
+.name{
+  /*讓文字超出範圍顯示 ....*/
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
 
+}
 /*# sourceMappingURL=style.css.map */
